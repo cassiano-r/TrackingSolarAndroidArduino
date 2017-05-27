@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cassiano.trackingsolarandroidarduino.ListaFuncoes">
+    	 <item android:id="@+id/sobre"
+        	  android:title="Sobre" />
+    	  
+    	 <item android:id="@+id/requisitos"
+        	  android:title="Develop" />
+
+		<item android:id="@+id/sair"
+			  android:title="Sair"/>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cassiano.trackingsolarandroidarduino.DadosReais">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <com.cardiomood.android.controls.gauge.SpeedometerGauge
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:id="@+id/speedometer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtWatts"
+            android:id="@+id/txtWatts"
+            android:layout_gravity="center_horizontal" />
+
+        <HorizontalScrollView
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:id="@+id/horizontalScrollView"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/temperatura" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtTemperatura"
+            android:id="@+id/txtTemperatura"
+            android:layout_gravity="center_horizontal" />
+
+        <HorizontalScrollView
+            android:layout_width="144dp"
+            android:layout_height="46dp"
+            android:id="@+id/horizontalScrollView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/umidade"
+            android:layout_weight="0.94" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/txtHumidade"
+            android:id="@+id/txtHumidade"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

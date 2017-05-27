@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationScreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <FrameLayout android:layout_width="705dp" android:layout_height="770dp"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:background="@drawable/circ">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="381dp"
+            android:layout_height="381dp"
+            android:id="@+id/imgAnim"
+            android:layout_gravity="center"
+            android:src="@drawable/android"/>
+
+        <ImageView
+            android:layout_width="381dp"
+            android:layout_height="381dp"
+            android:id="@+id/imgArduino"
+            android:layout_gravity="center"
+            android:src="@drawable/arduino"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="381dp"
+            android:layout_height="381dp"
+            android:id="@+id/imgSol"
+            android:layout_gravity="center"
+            android:src="@drawable/sol"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</FrameLayout>
